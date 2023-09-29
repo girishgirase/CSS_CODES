@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Horizontal Menu</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .menu
+        {
+            width: 100%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: lightgray;
+            float: left;
+        }
+        .main_menu
+        {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .main_menu li
+        {
+            float: left;
+        }
+        .main_menu li a{
+            color: black;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+        }
+        .main_menu li a:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        /* .main_menu li:hover ul
+        {
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="main_menu">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Courses</a>
+                <!-- <ul>
+                    <li>HTML</li>
+                </ul> -->
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

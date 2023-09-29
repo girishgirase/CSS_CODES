@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Z-index</title>
+    <style>
+        .img1
+        {
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 1;
+        }
+        .img2
+        {
+            position: absolute;
+            left: 70px;
+            top: 70px;
+            z-index: 16;
+        }
+        .img3
+        {
+            position: absolute;
+            z-index: 15;
+        }
+    </style>
+</head>
+<body>
+    <img src="../../31_jul_WD/images/download.jpg" alt="" width="200" height="200" class="img1">
+    <img src="../../31_jul_WD/images/Koala.jpg" alt="" width="200" height="200" class="img2">
+    <img src="../../31_jul_WD/images/jellyfish.jpg" alt="" width="200" height="200" class="img3">
+</body>
+</html>

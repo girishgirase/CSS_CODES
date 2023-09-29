@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - HTML Form</title>
+    <style>
+        .form_container
+        {
+            width: 50%;
+            float: left;
+            /* border: 1px solid black;
+            box-sizing: border-box; */
+        }
+        input[type="text"],input[type="password"],textarea,select
+        {
+            width: 100%;
+            padding: 10px 5px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid black;
+            /* outline: 1px solid blue;
+            outline-offset: 5px; */
+            outline:none;
+            margin-bottom: 10px;
+           
+        }
+        textarea
+        {
+            resize: none;
+        }
+        input[type="text"]:focus,input[type="password"]:focus,textarea:focus,select:focus
+        {
+            border: 1px solid red;
+        }
+        input[type="submit"]
+        {
+            padding: 12px 25px;
+            box-sizing: border-box;
+            background-color: #002347;
+            color: white;
+            border:1px solid #002347;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover
+        {
+            background-color: #FDC632;
+            color: black;
+            border:1px solid #FDC632;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_container">
+        <form action="">
+        <input type="text"  placeholder="Enter Username">
+        <input type="password" placeholder="Enter Password">
+        <textarea rows="5" placeholder="Enter Address"></textarea>
+        <select>
+            <option value="">Select Country</option>
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">Germany</option>
+        </select>
+        <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

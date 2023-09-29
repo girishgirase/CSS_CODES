@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Layout</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
+    <style>
+        body,p
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper
+        {
+            width: 100%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: left;
+        }
+        .header,.footer
+        {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #002347;
+            float: left;
+        }
+        .logo
+        {
+            width: 10%;
+            float: left;
+            height: 100px;
+            /* background-color: rgb(99, 122, 153); */
+        }
+        .socialIcons
+        {
+            width: 15%;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: right;
+        }
+        .icon
+        {
+            width: 23%;
+            margin: 0px 1%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .fb
+        {
+            background-color: #3b5998;
+            text-align: center;
+        }
+        .tw
+        {
+            background-color: #1DA1F2;
+            text-align: center;
+        }
+        .fbicon,.twicon
+        {
+            color: white;
+            font-size: 14px;
+        }
+        .menu
+        {
+            width: 100%;
+            padding: 20px 0px;
+            background-color: cornsilk;
+            float: left;
+        }
+        .left,.right
+        {
+            width: 10%;
+            padding: 250px 0px;
+            background-color: lightgray;
+            float: left;
+        }
+        .middle
+        {
+            width: 80%;
+            padding: 250px 0px;
+            background-color: lightslategray;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="../images/tatalogo2.png" alt="" width="100%" height="100px">
+            </div>
+            <div class="socialIcons">
+                <div class="icon fb">
+                    <i class="fab fa-facebook-f fbicon"></i>
+                </div>
+                <div class="icon tw">
+                    <i class="fab fa-twitter twicon"></i>
+                </div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+        </div>
+        <div class="menu"></div>
+        <div class="left">
+
+        </div>
+        <div class="middle"></div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
